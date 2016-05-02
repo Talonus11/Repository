@@ -6,3 +6,5 @@ project (one_shape)
 
 # CMake will now create the Makefiles that are needed to make an executable "hello" that requires "hello.cpp" 
 add_executable(shapes main.cpp shape.cpp rectangle.cpp circle.cpp triangle.cpp)
+
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11") #used for c++11 and STL stuff
